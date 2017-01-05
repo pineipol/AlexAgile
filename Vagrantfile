@@ -50,14 +50,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             end
 
             # Provisioning settings
-            # machine.vm.provision "ansible" do |ansible|
-            #     ansible.inventory_path = './ansible/hosts'
-            #     ansible.playbook       = inventory["ansible_playbook"]
-            #     ansible.limit          = inventory["ansible_machine_name"]
-            #     ansible.verbose        = 'false'
-            #     ansible.extra_vars     = inventory["ansible_extra_vars"]
-            #     ansible.verbose        = inventory["ansible_verbose"]
-            # end
+            machine.vm.provision "ansible" do |ansible|
+                ansible.inventory_path = './ansible/hosts'
+                ansible.playbook       = inventory["ansible_playbook"]
+                ansible.limit          = inventory["ansible_machine_name"]
+                ansible.verbose        = 'false'
+                ansible.extra_vars     = inventory["ansible_extra_vars"]
+                ansible.verbose        = inventory["ansible_verbose"]
+            end
         end
     end
 end

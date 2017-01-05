@@ -1,3 +1,4 @@
 .vagrant
 .idea/workspace.xml
 vagrant_inventory.yml
+/ansible/vars/parameters.yml

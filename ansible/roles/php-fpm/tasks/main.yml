@@ -1,0 +1,18 @@
+---
+- name: Add Php7 repository
+  include: php7_repository.yml
+
+- name: Install Php7.1
+  include: install.yml
+
+- name: Configure xdebug extension
+  include: xdebug.yml
+
+- name: Enable Php7.1 extensions
+  include: extensions.yml
+
+- name: Configure ini settings
+  include: ini_settings.yml
+
+- name: Composer install
+  include: composer.yml

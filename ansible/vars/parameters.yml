@@ -1,0 +1,3 @@
+mariadb:
+  mysql_secure_installation: true
+  mysql_root_password: p4ssw0rd

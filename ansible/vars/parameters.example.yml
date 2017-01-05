@@ -1,0 +1,3 @@
+mariadb:
+  mysql_secure_installation: true|false
+  mysql_root_password: secret-here
